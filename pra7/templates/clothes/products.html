@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class="clothes-block">
+
+        {% for item in clothes %}
+            <div class="clothes-item">
+                <a href=""><img src="{% static item.img %}" alt="{{item.name}}"></a>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
