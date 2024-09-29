@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Clothes shop{% endblock %}</title>
+    <link rel="stylesheet" href=" {% static 'style/style.css' %} ">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="{% url 'index' %}">Main page</a></li>
+                <li><a href="{% url 'showProds' %}">Products</a></li>
+                <li><a href="{% url 'showAbou' %}">About us</a></li>
+                <li><a href="{% url 'showBook' %}">Books?</a></li>
+            </ul>
+        </div>
+    </header>
+
+    {% block content %}
+
+    
+
+    {% endblock %}
+</body>
+</html>

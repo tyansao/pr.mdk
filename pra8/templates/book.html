@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div style="display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2vw;">
+        {% for i in books %}
+            <img src="{{i.image.url}}" alt="uploading err">
+        {% endfor %}
+    </div>  
+
+{% endblock %}

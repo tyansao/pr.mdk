@@ -1,0 +1,54 @@
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
+    width: 20vw;
+}
+
+
+
+.nav ul li a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 0.4vw;
+    color: black;
+}
+
+.nav ul li a:hover{
+    border: 3px solid blue;
+    padding: 0.3vw;
+    color: blue;
+}
+
+.clothes-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.clothes-item {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text h3 {
+    width: 60vw;
+    text-align: center;
+}
