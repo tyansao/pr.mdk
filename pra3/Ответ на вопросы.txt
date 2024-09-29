@@ -1,0 +1,4 @@
+1.для создания сущностей(энтити) для последующей миграции их в бд 
+2.py mange.py makemigrations
+3.app_dir/migrations
+4.py mange.py makemigrate
